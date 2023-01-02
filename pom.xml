@@ -17,11 +17,11 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
     <modules>
-        <module>app/main</module>
-        <module>app/test</module>
+
         <module>src/backoffice</module>
         <module>src/shared</module>
         <module>src/mooc</module>
+        <module>apps</module>
     </modules>
 
     <properties>

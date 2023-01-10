@@ -11,15 +11,15 @@ import javax.transaction.Transactional;
 import java.util.Optional;
 
 @Service
-public class MySqlRepository  implements CourseRepository {
+@Transactional
+public class MySqlCourseRepository implements CourseRepository {
 
-    private SessionFactory sessionFactory ;
+    private final SessionFactory sessionFactory ;
 
-    public MySqlRepository(SessionFactory sessionFactory) {
+    public MySqlCourseRepository(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
     }
 
-    @Transactional
     @Override
     public void save(Course course)  {
         sessionFactory.getCurrentSession().save(course);
@@ -27,7 +27,7 @@ public class MySqlRepository  implements CourseRepository {
 
     @Override
     public Optional<Course> search(CourseId id) {
-        return Optional.ofNullable(sessionFactory.getCurrentSession().find(Course.class,id));
+        return Optional.ofNullable(sessionFactory.getCurrentSession().byId(Course.class).getReference(id));
     }
 
 

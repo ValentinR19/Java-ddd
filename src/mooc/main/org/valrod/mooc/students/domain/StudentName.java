@@ -1,2 +1,9 @@
-package org.valrod.mooc.students.domain;public class StudentName {
+package org.valrod.mooc.students.domain;
+
+import org.valrod.shared.domain.StringValueObject;
+
+public class StudentName extends StringValueObject {
+    public StudentName(String value) {
+        super(value);
+    }
 }

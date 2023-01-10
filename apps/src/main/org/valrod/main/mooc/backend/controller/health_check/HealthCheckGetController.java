@@ -1,4 +1,4 @@
-package org.valrod.main.mooc.controller.health_check;
+package org.valrod.main.mooc.backend.controller.health_check;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

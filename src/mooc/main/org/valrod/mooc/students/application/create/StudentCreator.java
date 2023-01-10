@@ -1,12 +1,27 @@
 package org.valrod.mooc.students.application.create;
 
-import org.springframework.stereotype.Service;
-import org.valrod.mooc.students.domain.StudentId;
-import org.valrod.mooc.students.domain.StudentRepository;
+import org.valrod.mooc.courses.domain.StudentSurname;
+import org.valrod.mooc.students.domain.*;
+import org.valrod.shared.domain.Service;
 
 @Service
-public class StudentCreate {
-    public void create(StudentId id, String name, String surname, String email){
+public class StudentCreator {
 
+    private final StudentRepository repository;
+
+    public StudentCreator(StudentRepository repository) {
+        this.repository = repository;
     }
+
+    public void create(CreateStudentRequest request) {
+        Student student = new Student(
+                new StudentId(request.getId()),
+                new StudentName(request.getName()),
+                new StudentSurname(request.getSurname()),
+                new StudentEmail(request.getEmail())
+        );
+        repository.save(student);
+    }
+
+
 }

@@ -1,4 +1,4 @@
-package org.valrod.mooc.courses.insfrastructure;
+package org.valrod.mooc.courses.insfrastructure.persistence;
 
 
 import org.junit.jupiter.api.Test;
@@ -10,25 +10,24 @@ import static org.junit.jupiter.api.Assertions.*;
 
 final class InMemoryCourseRepositoryShould extends CourseModuleInfrastructureTestCase {
 
-
     @Test
     void save_a_course() throws Exception {
         Course course = CourseMother.random();
-        repository.save(course);
+        inMemoryCourseRepository.save(course);
     }
 
     @Test
     void return_an_existing_course() throws Exception {
         Course course = CourseMother.random();
-        repository.save(course);
+        inMemoryCourseRepository.save(course);
 
-        assertEquals(Optional.of(course), repository.search(course.getId()));
+        assertEquals(Optional.of(course), inMemoryCourseRepository.search(course.getId()));
     }
 
     @Test
     void not_find_a_non_existing_course() throws Exception {
 
-        assertFalse(repository.search(CourseIdMother.random()).isPresent());
+        assertFalse(inMemoryCourseRepository.search(CourseIdMother.random()).isPresent());
 
     }
 }

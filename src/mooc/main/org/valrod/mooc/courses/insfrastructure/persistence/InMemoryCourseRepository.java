@@ -1,13 +1,11 @@
-package org.valrod.mooc.courses.insfrastructure;
+package org.valrod.mooc.courses.insfrastructure.persistence;
 
-import org.springframework.stereotype.Service;
 import org.valrod.mooc.courses.domain.Course;
 import org.valrod.mooc.courses.domain.CourseId;
 import org.valrod.mooc.courses.domain.CourseRepository;
 
 import java.util.HashMap;
 import java.util.Optional;
-@Service
 public class InMemoryCourseRepository implements CourseRepository {
     private HashMap<String,Course> courses = new HashMap<>();
 

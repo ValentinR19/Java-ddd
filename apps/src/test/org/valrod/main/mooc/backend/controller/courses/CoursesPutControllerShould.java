@@ -1,4 +1,4 @@
-package org.valrod.main.mooc.controller.courses;
+package org.valrod.main.mooc.backend.controller.courses;
 
 
 import org.junit.jupiter.api.Test;

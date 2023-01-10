@@ -1,2 +1,10 @@
-package org.valrod.mooc.students.domain;public class StudentEmail {
+package org.valrod.mooc.students.domain;
+
+import org.valrod.shared.domain.StringValueObject;
+
+public class StudentEmail extends StringValueObject {
+
+    public StudentEmail(String value) {
+        super(value);
+    }
 }

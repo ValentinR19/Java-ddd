@@ -1,4 +1,4 @@
-package org.valrod.main.mooc.controller.health_check;
+package org.valrod.main.mooc.backend.controller.health_check;
 
 
 

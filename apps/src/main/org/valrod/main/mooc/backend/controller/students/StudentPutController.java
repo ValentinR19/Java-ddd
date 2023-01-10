@@ -1,4 +1,4 @@
-package org.valrod.main.mooc.controller.students;
+package org.valrod.main.mooc.backend.controller.students;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

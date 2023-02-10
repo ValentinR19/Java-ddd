@@ -1,9 +1,8 @@
 package org.valrod.mooc.students.domain;
 
-import org.valrod.mooc.courses.domain.StudentSurname;
 import org.valrod.shared.domain.WordMother;
 
-public final class StudentSurnameMother {
+public final class StudentSurnameMother  {
     public static StudentSurname create (String value){
         return new StudentSurname(value);
     }

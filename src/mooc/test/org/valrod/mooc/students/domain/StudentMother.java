@@ -1,6 +1,5 @@
 package org.valrod.mooc.students.domain;
 
-import org.valrod.mooc.courses.domain.StudentSurname;
 import org.valrod.mooc.students.application.create.CreateStudentRequest;
 
 public class StudentMother {

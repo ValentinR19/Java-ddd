@@ -25,7 +25,7 @@ public class MoocHibernateConfiguration {
         LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
         sessionFactory.setDataSource(dataSource());
         sessionFactory.setHibernateProperties(hibernateProperties());
-        List<Resource> mappingFiles = searchMappingFiles("server");
+        List<Resource> mappingFiles = searchMappingFiles("mooc");
 
         sessionFactory.setMappingLocations(mappingFiles.toArray(new Resource[mappingFiles.size()]));
 
@@ -33,7 +33,7 @@ public class MoocHibernateConfiguration {
     }
 
     private List<Resource> searchMappingFiles(String contextName) {
-        List<String> modules   = subdirectoriesFor(contextName);
+        List<String> modules = subdirectoriesFor(contextName);
         List<String> goodPaths = new ArrayList<>();
 
         for (String module : modules) {
@@ -53,7 +53,7 @@ public class MoocHibernateConfiguration {
         String[] files = new File(path).list((current, name) -> new File(current, name).isDirectory());
 
         if (null == files) {
-            path = "./main/org/valrod" + contextName + "/";
+            path = "./main/org/valrod/" + contextName + "/";
             files = new File(path).list((current, name) -> new File(current, name).isDirectory());
         }
 
@@ -97,7 +97,7 @@ public class MoocHibernateConfiguration {
 
     private Properties hibernateProperties() {
         Properties hibernateProperties = new Properties();
-        hibernateProperties.put(AvailableSettings.HBM2DDL_AUTO, "none");
+        hibernateProperties.put(AvailableSettings.HBM2DDL_AUTO, "create");
         hibernateProperties.put(AvailableSettings.SHOW_SQL, "false");
         hibernateProperties.put(AvailableSettings.DIALECT, "org.hibernate.dialect.MySQL8Dialect");
 

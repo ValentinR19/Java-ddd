@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/app/main/org.valrod.main/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/main/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/main/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/test/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app/test/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/apps/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/apps/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/backoffice/src/main/java" charset="UTF-8" />
@@ -15,12 +9,7 @@
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/mooc/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/mooc/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/shared/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/shared/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/shared/main/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/shared/main/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/shared/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/shared/test/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/shared/test/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/shared/src/main/resources" charset="UTF-8" />
   </component>
 </project>

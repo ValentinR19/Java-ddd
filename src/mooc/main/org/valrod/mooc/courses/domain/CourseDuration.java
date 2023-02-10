@@ -9,5 +9,6 @@ public class CourseDuration extends StringValueObject {
 
     private CourseDuration() {
         super("");
+
     }
 }

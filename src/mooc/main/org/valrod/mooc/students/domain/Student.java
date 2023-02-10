@@ -1,23 +1,27 @@
 package org.valrod.mooc.students.domain;
 
-import org.valrod.mooc.courses.domain.StudentSurname;
-
 import java.util.Objects;
 
 public class Student {
-    private StudentId id;
+    private final StudentId id;
 
-    private StudentName name;
+    private final StudentName name;
 
-    private StudentSurname surname;
+    private final StudentSurname surname;
 
-    private StudentEmail email;
+    private final StudentEmail email;
 
     public Student(StudentId id, StudentName name, StudentSurname surname, StudentEmail email) {
         this.id = id;
         this.name = name;
         this.surname = surname;
         this.email = email;
+    }
+    public Student(){
+        this.id = null;
+        this.name = null;
+        this.surname = null;
+        this.email = null;
     }
 
     public StudentId getId() {

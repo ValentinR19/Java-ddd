@@ -11,6 +11,7 @@ import org.valrod.mooc.courses.application.create.CreateCourseRequest;
 
 @RestController
 public final class CoursesPutController {
+
     private CourseCreator creator;
 
     public CoursesPutController(CourseCreator creator) {

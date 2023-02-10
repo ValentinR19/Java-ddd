@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a3a271cb-ef0a-40ff-bbc1-dc3eb6a7ba5c" name="Changes" comment="Agregando test de CourseRepository, falta arreglar el mapeo de clases">
+      <change afterPath="$PROJECT_DIR$/.jpb/jpb-settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mooc/main/org/valrod/mooc/steps/domain/Step.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mooc/main/org/valrod/mooc/steps/domain/StepId.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mooc/main/org/valrod/mooc/steps/domain/StepRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mooc/main/org/valrod/mooc/steps/domain/StepTitle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mooc/main/org/valrod/mooc/steps/domain/challenge/ChallengeStep.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mooc/main/org/valrod/mooc/steps/domain/challenge/ChallengeStepStatement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mooc/main/org/valrod/mooc/steps/domain/video/VideoStep.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mooc/main/org/valrod/mooc/steps/domain/video/VideoStepText.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mooc/main/org/valrod/mooc/steps/infrastructure/persistence/MySqlStepRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mooc/main/org/valrod/mooc/steps/infrastructure/persistence/hibernate/VideoStep.hbm.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mooc/main/org/valrod/mooc/students/infrastructure/persistence/MySqlStudentRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mooc/main/org/valrod/mooc/students/infrastructure/persistence/hibernate/Student.hbm.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mooc/test/org/valrod/mooc/steps/domain/StepIdMother.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mooc/test/org/valrod/mooc/steps/domain/StepTitleMother.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mooc/test/org/valrod/mooc/steps/domain/challenge/ChallengeStepMother.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mooc/test/org/valrod/mooc/steps/domain/challenge/ChallengeStepStatementMother.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mooc/test/org/valrod/mooc/steps/domain/video/VideoStepMother.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mooc/test/org/valrod/mooc/steps/domain/video/VideoStepTextMother.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mooc/test/org/valrod/mooc/steps/infrastructure/MySqlStepRepositoryShould.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mooc/test/org/valrod/mooc/steps/infrastructure/StepModuleInfrastructureTestCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mooc/test/org/valrod/mooc/students/infrastructure/persistence/MySqlStudentRepositoryShould.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/mooc/test/org/valrod/mooc/students/infrastructure/persistence/StudentModuleInfrastructureTestCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/main/org/valrod/shared/domain/VideoUrl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/main/org/valrod/shared/infrastructure/hibernate/HibernateRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/test/org/valrod/shared/domain/VideoUrlMother.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jpa-buddy.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/src/main/org/valrod/main/Starter.java" beforeDir="false" afterPath="$PROJECT_DIR$/apps/src/main/org/valrod/main/Starter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/src/main/org/valrod/main/mooc/backend/controller/courses/CoursesPutController.java" beforeDir="false" afterPath="$PROJECT_DIR$/apps/src/main/org/valrod/main/mooc/backend/controller/courses/CoursesPutController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mooc/main/org/valrod/mooc/courses/domain/Course.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mooc/main/org/valrod/mooc/courses/domain/Course.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mooc/main/org/valrod/mooc/courses/domain/CourseDuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mooc/main/org/valrod/mooc/courses/domain/CourseDuration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mooc/main/org/valrod/mooc/courses/domain/CourseId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mooc/main/org/valrod/mooc/courses/domain/CourseId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mooc/main/org/valrod/mooc/courses/domain/CourseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mooc/main/org/valrod/mooc/courses/domain/CourseRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mooc/main/org/valrod/mooc/courses/domain/StudentSurname.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mooc/main/org/valrod/mooc/students/domain/StudentSurname.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mooc/main/org/valrod/mooc/courses/insfrastructure/persistence/InMemoryCourseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mooc/main/org/valrod/mooc/courses/infrastructure/persistence/InMemoryCourseRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mooc/main/org/valrod/mooc/courses/insfrastructure/persistence/MySqlCourseRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mooc/main/org/valrod/mooc/courses/infrastructure/persistence/MySqlCourseRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mooc/main/org/valrod/mooc/courses/insfrastructure/persistence/hibernate/Course.hbm.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/mooc/main/org/valrod/mooc/courses/infrastructure/persistence/hibernate/Course.hbm.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mooc/main/org/valrod/mooc/shared/infrastrucure/persistence/MoocHibernateConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mooc/main/org/valrod/mooc/shared/infrastrucure/persistence/MoocHibernateConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mooc/main/org/valrod/mooc/students/application/create/StudentCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mooc/main/org/valrod/mooc/students/application/create/StudentCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mooc/main/org/valrod/mooc/students/domain/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mooc/main/org/valrod/mooc/students/domain/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mooc/main/org/valrod/mooc/students/domain/StudentEmail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mooc/main/org/valrod/mooc/students/domain/StudentEmail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mooc/main/org/valrod/mooc/students/domain/StudentId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mooc/main/org/valrod/mooc/students/domain/StudentId.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mooc/main/org/valrod/mooc/students/domain/StudentName.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mooc/main/org/valrod/mooc/students/domain/StudentName.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mooc/main/org/valrod/mooc/students/domain/StudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mooc/main/org/valrod/mooc/students/domain/StudentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mooc/main/org/valrod/mooc/students/infrastructure/InMemoryStudentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mooc/main/org/valrod/mooc/students/infrastructure/persistence/InMemoryStudentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mooc/main/resources/database/mooc.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/mooc/main/resources/database/mooc.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mooc/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/mooc/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mooc/test/org/valrod/mooc/courses/application/create/CourseModuleUnitTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mooc/test/org/valrod/mooc/courses/application/create/CourseModuleUnitTestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mooc/test/org/valrod/mooc/courses/insfrastructure/persistence/CourseModuleInfrastructureTestCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mooc/test/org/valrod/mooc/courses/infrastructure/persistence/CourseModuleInfrastructureTestCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mooc/test/org/valrod/mooc/courses/insfrastructure/persistence/InMemoryCourseRepositoryShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mooc/test/org/valrod/mooc/courses/infrastructure/persistence/InMemoryCourseRepositoryShould.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mooc/test/org/valrod/mooc/courses/insfrastructure/persistence/MySqlCourseRepositoryShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mooc/test/org/valrod/mooc/courses/infrastructure/persistence/MySqlCourseRepositoryShould.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mooc/test/org/valrod/mooc/students/application/create/CreateStudentRequestMother.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mooc/test/org/valrod/mooc/students/application/create/CreateStudentRequestMother.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mooc/test/org/valrod/mooc/students/application/create/StudentCreatorShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mooc/test/org/valrod/mooc/students/application/create/StudentCreatorShould.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mooc/test/org/valrod/mooc/students/domain/StudentIdMother.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mooc/test/org/valrod/mooc/students/domain/StudentIdMother.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mooc/test/org/valrod/mooc/students/domain/StudentMother.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mooc/test/org/valrod/mooc/students/domain/StudentMother.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mooc/test/org/valrod/mooc/students/domain/StudentSurnameMother.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mooc/test/org/valrod/mooc/students/domain/StudentSurnameMother.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mooc/test/org/valrod/mooc/students/infrastructure/InMemoryStudentRepositoryShould.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mooc/test/org/valrod/mooc/students/infrastructure/persistence/InMemoryStudentRepositoryShould.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="PARALLEL_COMPILATION" value="false" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="e9e95060-51b0-4898-bd78-ebd019ca8d85" />
+        <option name="url" value="https://github.com/ValentinR19/Java-ddd-skeleton-maven.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="isToolWindowVisible" value="false" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="2Jk27yldAcMspsy2GmwIfc1kfmB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_directory_selection&quot;: &quot;F:/DDD en Java/java-ddd-maven-skeleton/apps/src/main/org/valrod/main/mooc/backend&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/DDD en Java/java-ddd-maven-skeleton&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.build.tools.auto.reload&quot;: &quot;SELECTIVE&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;73edb7cf6ed98cbcc59a5446e1d7066f&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.valrod.mooc.steps.domain" />
+      <recent name="org.valrod.mooc.steps.infrastructure" />
+      <recent name="org.valrod.main.mooc.backend." />
+      <recent name="org.valrod.mooc.students.domain" />
+      <recent name="org.valrod.mooc.courses.domain" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\DDD en Java\java-ddd-maven-skeleton\src\shared\test" />
+      <recent name="E:\DDD en Java\java-ddd-maven-skeleton\apps\src\test\main" />
+      <recent name="E:\DDD en Java\java-ddd-maven-skeleton\app\test\resources" />
+      <recent name="E:\DDD en Java\java-ddd-maven-skeleton\app\test" />
+      <recent name="E:\DDD en Java\java-ddd-maven-skeleton\app\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\DDD en Java\java-ddd-maven-skeleton\src\shared" />
+      <recent name="F:\DDD en Java\java-ddd-maven-skeleton\src\mooc" />
+      <recent name="E:\DDD en Java\java-ddd-maven-skeleton\apps\src\test\main\resources" />
+      <recent name="E:\DDD en Java\java-ddd-maven-skeleton\apps\src\main\resources" />
+      <recent name="E:\DDD en Java\java-ddd-maven-skeleton\app\main" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.valrod.mooc.students.domain" />
+      <recent name="org.valrod.mooc.steps.domain.video" />
+      <recent name="org.valrod.mooc.steps.domain.challenge" />
+      <recent name="org.valrod.shared.domain" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.valrod.mooc.courses.insfrastructure.persistence" />
+      <recent name="org.valrod.mooc.courses.domain" />
+      <recent name="org.valrod.mooc.students.infrastructure" />
+      <recent name="org.valrod.mooc.students.application.create" />
+      <recent name="org.valrod.mooc.courses.insfrastructure" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn install" />
+      <command value="mvn package" />
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.MySqlStudentRepositoryShould">
+    <configuration name="All in java-ddd-maven-skeleton" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="java-ddd-maven-skeleton" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CourseCreatorShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mooc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.valrod.mooc.courses.application.create.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.valrod.mooc.courses.application.create" />
+      <option name="MAIN_CLASS_NAME" value="org.valrod.mooc.courses.application.create.CourseCreatorShould" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InMemoryStudentRepositoryShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mooc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.valrod.mooc.students.infrastructure.persistence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.valrod.mooc.students.infrastructure.persistence" />
+      <option name="MAIN_CLASS_NAME" value="org.valrod.mooc.students.infrastructure.persistence.InMemoryStudentRepositoryShould" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MySqlStudentRepositoryShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mooc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.valrod.mooc.students.infrastructure.persistence.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.valrod.mooc.students.infrastructure.persistence" />
+      <option name="MAIN_CLASS_NAME" value="org.valrod.mooc.students.infrastructure.persistence.MySqlStudentRepositoryShould" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StudentCreatorShould" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mooc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.valrod.mooc.students.application.create.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.valrod.mooc.students.application.create" />
+      <option name="MAIN_CLASS_NAME" value="org.valrod.mooc.students.application.create.StudentCreatorShould" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Starter" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="apps" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.valrod.main.Starter" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MySqlStudentRepositoryShould" />
+        <item itemvalue="JUnit.InMemoryStudentRepositoryShould" />
+        <item itemvalue="JUnit.StudentCreatorShould" />
+        <item itemvalue="JUnit.CourseCreatorShould" />
+        <item itemvalue="JUnit.All in java-ddd-maven-skeleton" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpringBeansView">
+    <option name="beanDetailsProportion" value="0.3" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a3a271cb-ef0a-40ff-bbc1-dc3eb6a7ba5c" name="Changes" comment="" />
+      <created>1672607597980</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1672607597980</updated>
+      <workItem from="1672699064795" duration="2268000" />
+      <workItem from="1672792379993" duration="5528000" />
+      <workItem from="1672799373610" duration="28079000" />
+      <workItem from="1673029054735" duration="31762000" />
+      <workItem from="1673367349837" duration="3467000" />
+      <workItem from="1673371873403" duration="1588000" />
+      <workItem from="1673485858167" duration="2425000" />
+      <workItem from="1673489715431" duration="14184000" />
+      <workItem from="1673569363082" duration="445000" />
+      <workItem from="1673569820362" duration="16000" />
+      <workItem from="1673572971687" duration="10752000" />
+      <workItem from="1674060279955" duration="13939000" />
+      <workItem from="1674746085613" duration="19000" />
+      <workItem from="1674746111020" duration="830000" />
+      <workItem from="1674759353511" duration="607000" />
+      <workItem from="1674759968762" duration="1569000" />
+      <workItem from="1675190375129" duration="1763000" />
+    </task>
+    <task id="LOCAL-00001" summary="Primer modelo de template, todavia faltan resolver algunas dependencias">
+      <created>1672610164272</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1672610164272</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Primer modelo de template, todavia faltan resolver algunas dependencias">
+      <created>1672610244514</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1672610244514</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Primer modelo de template, todavia faltan resolver algunas dependencias">
+      <created>1672610262472</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1672610262472</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Arreglando modulo apps para poder ejecutar los test">
+      <created>1672690468442</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1672690468442</updated>
+    </task>
+    <task id="LOCAL-00005" summary="first commit">
+      <created>1672691477563</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1672691477563</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Agregando test de CourseRepository, falta arreglar el mapeo de clases">
+      <created>1673370792670</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1673370792670</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-core" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.persistence:jakarta.persistence-api" />
+    <option featureType="dependencySupport" implementationName="java:javax.persistence:javax.persistence-api" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.data:spring-data-commons" />
+    <option featureType="dependencySupport" implementationName="java:org.hibernate:hibernate-core" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-webmvc" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Primer modelo de template, todavia faltan resolver algunas dependencias" />
+    <MESSAGE value="Arreglando modulo apps para poder ejecutar los test" />
+    <MESSAGE value="first commit" />
+    <MESSAGE value="Agregando test de CourseRepository, falta arreglar el mapeo de clases" />
+    <option name="LAST_COMMIT_MESSAGE" value="Agregando test de CourseRepository, falta arreglar el mapeo de clases" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

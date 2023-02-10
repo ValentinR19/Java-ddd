@@ -9,6 +9,7 @@ import org.valrod.shared.infrastructure.cli.ConsoleCommand;
 import java.util.Arrays;
 import java.util.HashMap;
 
+
 public class Starter {
     public static void main(String[] args) {
         if (args.length < 2) {

@@ -14,6 +14,8 @@ public class CourseModuleUnitTestCase extends UnitTestCase {
     protected void setUp(){
         repository = mock(CourseRepository.class);
     }
+
+
     protected void shouldHaveSaved(Course course){
         verify(repository,atLeastOnce()).save(course);
     }

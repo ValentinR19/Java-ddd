@@ -3,9 +3,10 @@ package org.valrod.mooc.courses.domain;
 import java.util.Objects;
 
 public class Course {
-    private final CourseId id;
-    private final CourseName name;
-    private final CourseDuration duration;
+
+    private final  CourseId id;
+    private final  CourseName name;
+    private final  CourseDuration duration;
 
 
     public Course(CourseId id, CourseName name, CourseDuration duration) {
@@ -16,9 +17,9 @@ public class Course {
     }
 
     public Course() {
-        id = null;
-        name = null;
-        duration = null;
+        this.id = null;
+        this.name = null;
+        this.duration = null;
     }
 
     public CourseId getId() {
@@ -35,10 +36,16 @@ public class Course {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
         Course course = (Course) o;
-        return id.equals(course.id) && Objects.equals(name, course.name) && Objects.equals(duration, course.duration);
+        return id.equals(course.id) &&
+                name.equals(course.name) &&
+                duration.equals(course.duration);
     }
 
     @Override
